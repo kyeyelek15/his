@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karty Pracy - Gospodarka i społeczeństwo ziem polskich</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .page {
+            background: white;
+            max-width: 210mm;
+            margin: 0 auto 30px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        
+        .main-section {
+            border: 3px solid #666;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            background: #ccc;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .subsection-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .subsection {
+            flex: 1;
+            border: 2px solid #999;
+            padding: 15px;
+        }
+        
+        .subsection-title {
+            background: #e8e8e8;
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .question-box {
+            border: 2px solid #999;
+            padding: 12px;
+            margin-bottom: 12px;
+            min-height: 60px;
+        }
+        
+        .question {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .answer {
+            color: #0066cc;
+            font-size: 13px;
+            line-height: 1.5;
+            padding-left: 10px;
+        }
+        
+        .answer-line {
+            border-bottom: 1px solid #ccc;
+            min-height: 22px;
+            margin-bottom: 5px;
+            padding: 2px 5px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="header">
+        <h1>Uporządkuj swoją wiedzę</h1>
+    </div>
+    
+    <div class="main-section">
+        <div class="section-title">Gospodarka i społeczeństwo ziem polskich</div>
+        
+        <div class="subsection-container">
+            <div class="subsection">
+                <div class="subsection-title">Praca u podstaw</div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazwamy działania mające na celu umacnianie świadomości narodowej?</div>
+                    <div class="answer">praca u podstaw</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Który gmach w Poznaniu stał się centrum polskości?</div>
+                    <div class="answer">Bazar poznański</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazywały się organizacje edukujące polskich producentów?</div>
+                    <div class="answer">kółka rolnicze</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Kto był najsłynniejszym organizatorem kas pożyczkowych w Galicji?</div>
+                    <div class="answer">Franciszek Stefczyk</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazywał się podmiot organizujący edukację na wsiach w Królestwie Polskim?</div>
+                    <div class="answer">Towarzystwo Oświaty Ludowej</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Kim byli najważniejsi przedstawiciele pracy organicznej w zaborze</div>
+                    <div class="answer">
+                        <div style="margin-top: 5px;"><strong>austriackim:</strong> Stanisław Szczepanowski</div>
+                        <div style="margin-top: 5px;"><strong>pruskim:</strong> Hipolit Cegielski</div>
+                        <div style="margin-top: 5px;"><strong>rosyjskim?</strong> Aleksander Świętochowski</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <div class="subsection-title">Gospodarka</div>
+                
+                <div style="margin-bottom: 15px;">
+                    <div style="background: #f0f0f0; padding: 8px; font-weight: bold; margin-bottom: 10px;">Rolnictwo</div>
+                    
+                    <div class="question-box">
+                        <div class="question">W którym zaborze rolnictwo było najlepiej rozwinięte?</div>
+                        <div class="answer">zabór pruski</div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">W której części ziem polskich wieś była najbardziej zacofana?</div>
+                        <div class="answer">zabór rosyjski (wschodnie tereny)</div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">Gdzie powstało wzorowe gospodarstwo Andrzeja Zamoyskiego?</div>
+                        <div class="answer">Klemensów</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div style="background: #f0f0f0; padding: 8px; font-weight: bold; margin-bottom: 10px;">Przemysł</div>
+                    
+                    <div class="question-box">
+                        <div class="question">Jakie wydarzenie z 1851 r. przyczyniło się do szybszego rozwoju Królestwa Polskiego?</div>
+                        <div class="answer">zniesienie granicy celnej między Królestwem Polskim a Cesarstwem Rosyjskim</div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">Jakie okręgi przemysłowe powstały w Królestwie Polskim?</div>
+                        <div class="answer">
+                            <div class="answer-line">• łódzki</div>
+                            <div class="answer-line">• zagłębiowski</div>
+                            <div class="answer-line">• warszawski</div>
+                        </div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">Które miasto stało się wielkim ośrodkiem przemysłu włókienniczego?</div>
+                        <div class="answer">Łódź</div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">Jaka gałąź przemysłu rozwijała się w Galicji?</div>
+                        <div class="answer">przemysł naftowy</div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">Kto był wynalazcą lampy naftowej?</div>
+                        <div class="answer">Ignacy Łukasiewicz</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <div class="subsection-title">Społeczeństwo</div>
+                
+                <div style="margin-bottom: 15px;">
+                    <div style="background: #f0f0f0; padding: 8px; font-weight: bold; margin-bottom: 10px;">Szlachta</div>
+                    
+                    <div class="question-box">
+                        <div class="question">Jak zaczęto nazywać najbogatszą warstwę szlachty?</div>
+                        <div class="answer">arystokracja</div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">Jaka grupa wykształciła się ze średniej szlachty?</div>
+                        <div class="answer">ziemiaństwo</div>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <div style="background: #f0f0f0; padding: 8px; font-weight: bold; margin-bottom: 10px;">Mieszczaństwo</div>
+                    
+                    <div class="question-box">
+                        <div class="question">Jak nazwano najbogatszych mieszczan?</div>
+                        <div class="answer">burżuazja</div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">Jak nazywano uboższą warstwę mieszkańców miast, m.in. kupców i rzemieślników?</div>
+                        <div class="answer">drobnomieszczaństwo (drobna burżuazja)</div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">Które kraje amerykańskie stały się głównymi kierunkami emigracji Polaków?</div>
+                        <div class="answer">
+                            <div class="answer-line">• Stany Zjednoczone</div>
+                            <div class="answer-line">• Brazylia</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div style="background: #f0f0f0; padding: 8px; font-weight: bold; margin-bottom: 10px;">Asymilacja Żydów</div>
+                    
+                    <div class="question-box">
+                        <div class="question">Jak nazwano miasteczka z przewagą ludności żydowskiej?</div>
+                        <div class="answer">sztetl</div>
+                    </div>
+                    
+                    <div class="question-box">
+                        <div class="question">Jakim językiem posługiwała się większość polskich Żydów?</div>
+                        <div class="answer">jidysz</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

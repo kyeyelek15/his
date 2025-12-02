@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karty Pracy - Nowe nurty polityczne</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .page {
+            background: white;
+            max-width: 210mm;
+            margin: 0 auto 30px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        
+        .main-section {
+            border: 3px solid #666;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            background: #ccc;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .subsection-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .subsection {
+            flex: 1;
+            border: 2px solid #999;
+            padding: 15px;
+        }
+        
+        .subsection-title {
+            background: #e8e8e8;
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .question-box {
+            border: 2px solid #999;
+            padding: 12px;
+            margin-bottom: 12px;
+            min-height: 70px;
+        }
+        
+        .question {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .answer {
+            color: #0066cc;
+            font-size: 13px;
+            line-height: 1.5;
+            padding-left: 10px;
+        }
+        
+        .answer-line {
+            border-bottom: 1px solid #ccc;
+            min-height: 22px;
+            margin-bottom: 5px;
+            padding: 2px 5px;
+        }
+        
+        .bottom-section {
+            border-top: 3px solid #666;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="header">
+        <h1>Uporządkuj swoją wiedzę</h1>
+    </div>
+    
+    <div class="main-section">
+        <div class="section-title">Nowe nurty polityczne</div>
+        
+        <div class="subsection-container">
+            <div class="subsection">
+                <div class="subsection-title">Ruch socjalistyczny</div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazywała się pierwsza polska partia socjalistyczna?</div>
+                    <div class="answer">Wielki Proletariat</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Kto był jej założycielem?</div>
+                    <div class="answer">Ludwik Waryński</div>
+                </div>
+                
+                <div class="question-box" style="border: 3px solid #999; background: #f9f9f9;">
+                    <div style="font-weight: bold; text-align: center; margin-bottom: 10px;">Polska Partia Socjalistyczna</div>
+                    
+                    <div class="question">Gdzie i kiedy powstała PPS?</div>
+                    <div class="answer">Paryż, 1892 r.</div>
+                    
+                    <div class="question" style="margin-top: 10px;">Kto był autorem programu PPS?</div>
+                    <div class="answer">Bolesław Limanowski</div>
+                    
+                    <div class="question" style="margin-top: 10px;">Który sławny polityk znalazł się w zarządzie tej partii?</div>
+                    <div class="answer">Józef Piłsudski</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazywała się partia dążąca do komunizmu?</div>
+                    <div class="answer">Socjaldemokracja Królestwa Polskiego i Litwy (SDKPiL)</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Kto stanął na jej czele?</div>
+                    <div class="answer">
+                        <div class="answer-line">• Róża Luksemburg</div>
+                        <div class="answer-line">• Julian Marchlewski</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <div class="subsection-title">Ruch narodowy</div>
+                
+                <div class="question-box">
+                    <div class="question">Jaka polska organizacja powstała w Szwajcarii w 1887 r.?</div>
+                    <div class="answer">Liga Polska</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jaką organizację założył w Krakowie Zygmunt Balicki?</div>
+                    <div class="answer">Liga Narodowa</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Kto stanął na czele utworzonej w 1893 r. Ligi Narodowej?</div>
+                    <div class="answer">Roman Dmowski</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazywała się pierwsza polska partia nacjonalistyczna?</div>
+                    <div class="answer">Stronnictwo Narodowo-Demokratyczne (Narodowa Demokracja, endecja)</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Które miasto było głównym ośrodkiem narodowców?</div>
+                    <div class="answer">Warszawa</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jak inaczej nazywał się polski ruch nacjonalistyczny?</div>
+                    <div class="answer">endecja</div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <div class="subsection-title">Ruch ludowy</div>
+                
+                <div class="question-box">
+                    <div class="question">Jak inaczej nazywano ruch ludowy?</div>
+                    <div class="answer">ruch chłopski</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazwało się małżeństwo wydające pismo "Przegląd Społeczny" i "Przyjaciel Ludu"?</div>
+                    <div class="answer">Maria i Bolesław Wysłouchowie</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazywała się utworzona w 1895 r. pierwsza partia chłopska?</div>
+                    <div class="answer">Stronnictwo Ludowe</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Na jakie frakcje rozpadło się PSL w 1913 r.?</div>
+                    <div class="answer">
+                        <div class="answer-line">• PSL-Piast</div>
+                        <div class="answer-line">• PSL-Lewica</div>
+                    </div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Kto był jednym z liderów PSL-Piast?</div>
+                    <div class="answer">Wincenty Witos</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom-section">
+            <div class="section-title">Rewolucja 1905–1907</div>
+            
+            <div class="subsection-container">
+                <div class="question-box" style="flex: 1;">
+                    <div class="question">Gdzie w styczniu 1905 r. wybuchła rewolucja socjalistyczna?</div>
+                    <div class="answer">Rosja (Petersburg)</div>
+                </div>
+                
+                <div class="question-box" style="flex: 1;">
+                    <div class="question">Gdzie na ziemiach polskich doszło do powstania robotniczego w czerwcu 1905 r.?</div>
+                    <div class="answer">Łódź</div>
+                </div>
+                
+                <div class="question-box" style="flex: 1;">
+                    <div class="question">Jakie frakcje powstały w wyniku rozłamu w PPS?</div>
+                    <div class="answer">
+                        <div class="answer-line">• PPS-Lewica</div>
+                        <div class="answer-line">• PPS-Frakcja Rewolucyjna</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
