@@ -5,195 +5,288 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uporządkuj swoją wiedzę - Przyczyny światowego konfliktu</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: Arial, sans-serif;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            border-bottom: 2px solid #666;
-            padding-bottom: 10px;
-        }
-        .main-title {
-            background-color: #999;
-            color: white;
+            background: #f5f5f5;
             padding: 10px;
-            text-align: center;
-            margin: 20px 0;
-            font-weight: bold;
         }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
+        
+        .page {
+            background: white;
+            max-width: 210mm;
+            margin: 0 auto 30px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: left;
             margin-bottom: 30px;
         }
-        .column {
-            flex: 1;
+        
+        .header h1 {
+            font-size: clamp(20px, 5vw, 28px);
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        
+        .main-section {
+            border: 3px solid #666;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            background: #ccc;
+            text-align: center;
+            padding: 12px;
+            font-size: clamp(16px, 4vw, 18px);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .subsection-container {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            margin-bottom: 20px;
         }
-        .box {
-            background-color: white;
-            border: 2px solid #666;
-            border-radius: 5px;
-            padding: 15px;
-            min-height: 100px;
+        
+        .subsection {
+            flex: 1;
+            border: 2px solid #999;
+            padding: 12px;
         }
-        .box-header {
-            background-color: #ddd;
-            padding: 8px;
+        
+        .subsection-title {
+            background: #e8e8e8;
             text-align: center;
+            padding: 10px;
+            font-size: clamp(14px, 3.5vw, 15px);
             font-weight: bold;
-            margin: -15px -15px 10px -15px;
-            border-radius: 3px 3px 0 0;
+            margin-bottom: 15px;
         }
+        
+        .question-box {
+            border: 2px solid #999;
+            padding: 10px;
+            margin-bottom: 12px;
+            min-height: auto;
+        }
+        
+        .question {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: clamp(12px, 3vw, 13px);
+            line-height: 1.4;
+        }
+        
         .answer {
             color: #0066cc;
-            font-weight: bold;
-            margin: 5px 0;
+            font-size: clamp(12px, 3vw, 13px);
+            line-height: 1.5;
+            padding-left: 10px;
         }
+        
         ul {
             margin: 10px 0;
             padding-left: 20px;
+            list-style-type: none;
         }
+        
         li {
             margin: 5px 0;
+            color: #0066cc;
+            font-size: clamp(12px, 3vw, 13px);
+            padding-left: 10px;
+        }
+        
+        li::before {
+            content: "• ";
+            font-weight: bold;
+        }
+        
+        @media (min-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            
+            .page {
+                padding: 30px;
+            }
+            
+            .subsection-container {
+                flex-direction: row;
+            }
+            
+            .main-section {
+                padding: 20px;
+            }
+            
+            .subsection {
+                padding: 15px;
+            }
+            
+            .question-box {
+                padding: 12px;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                page-break-after: always;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Uporządkuj swoją wiedzę</h1>
+
+<div class="page">
+    <div class="header">
+        <h1>Uporządkuj swoją wiedzę</h1>
+    </div>
     
-    <div class="main-title">Przyczyny światowego konfliktu</div>
-    
-    <div class="container">
-        <div class="column">
-            <div class="box">
-                <div class="box-header">Międzynarodowy układ sił</div>
-                <p><strong>Jak nazywano okres stabilizacji politycznej w Europie po 1871 r.?</strong></p>
-                <p class="answer">„piękna epoka"</p>
-            </div>
-            
-            <div class="box">
-                <p><strong>Które państwo posiadało największe imperium kolonialne na świecie?</strong></p>
-                <p class="answer">Wielka Brytania</p>
-            </div>
-            
-            <div class="box">
-                <p><strong>Które państwa zyskały status mocarstw w Azji w XIX w.?</strong></p>
-                <ul>
-                    <li class="answer">Japonia</li>
-                    <li class="answer">Cesarstwo Rosyjskie</li>
-                </ul>
-            </div>
-            
-            <div class="box">
-                <p><strong>Które państwo w Europie dysponowało najsilniejszą gospodarką w 1914 r.?</strong></p>
-                <p class="answer">Niemcy</p>
-            </div>
-            
-            <div class="box">
-                <p><strong>Jak nazywano mocarstawową politykę Niemiec prowadzoną przez cesarza Wilhelma II?</strong></p>
-                <p class="answer">Weltpolitik</p>
-            </div>
-        </div>
+    <div class="main-section">
+        <div class="section-title">Przyczyny światowego konfliktu</div>
         
-        <div class="column">
-            <div class="box">
-                <div class="box-header">Sojusze mocarstw</div>
-                <p><strong>Trójprzymierze</strong></p>
-                <p>Które państwa zawiązały sojusz?</p>
-                <ul>
-                    <li class="answer">Niemcy</li>
-                    <li class="answer">Austro-Węgry</li>
-                    <li class="answer">Włochy</li>
-                </ul>
-                <p><strong>W którym roku powstał sojusz?</strong></p>
-                <p class="answer">1882 r.</p>
-                <p><strong>Jak inaczej jest nazywany ten blok państw?</strong></p>
-                <p class="answer">państwa centralne</p>
+        <div class="subsection-container">
+            <div class="subsection">
+                <div class="subsection-title">Międzynarodowy układ sił</div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazywano okres stabilizacji politycznej w Europie po 1871 r.?</div>
+                    <div class="answer">„piękna epoka"</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Które państwo posiadało największe imperium kolonialne na świecie?</div>
+                    <div class="answer">Wielka Brytania</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Które państwa zyskały status mocarstw w Azji w XIX w.?</div>
+                    <ul>
+                        <li>Japonia</li>
+                        <li>Cesarstwo Rosyjskie</li>
+                    </ul>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Które państwo w Europie dysponowało najsilniejszą gospodarką w 1914 r.?</div>
+                    <div class="answer">Niemcy</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jak nazywano mocarstawową politykę Niemiec prowadzoną przez cesarza Wilhelma II?</div>
+                    <div class="answer">Weltpolitik</div>
+                </div>
             </div>
             
-            <div class="box">
-                <p><strong>Trójporozumienie</strong></p>
-                <p>Które państwa zawiązały sojusz?</p>
-                <ul>
-                    <li class="answer">Francja</li>
-                    <li class="answer">Rosja</li>
-                    <li class="answer">Wielka Brytania</li>
-                </ul>
-                <p><strong>W którym roku powstał ten blok państw?</strong></p>
-                <p class="answer">1907 r.</p>
-                <p><strong>Jak inaczej jest nazywany ten sojusz państw?</strong></p>
-                <p class="answer">ententa</p>
-            </div>
-        </div>
-        
-        <div class="column">
-            <div class="box">
-                <div class="box-header">„Kocioł bałkański"</div>
-                <p><strong>Które państwa toczyły wojnę w latach 1877–1878?</strong></p>
-                <ul>
-                    <li class="answer">Rosja</li>
-                    <li class="answer">Turcja</li>
-                </ul>
-                <p><strong>Które państwo zwyciężyło?</strong></p>
-                <p class="answer">Rosja</p>
-            </div>
-            
-            <div class="box">
-                <p><strong>Jakie nowe państwa powstały na Półwyspie Bałkańskim na przełomie XIX i XX w.?</strong></p>
-                <ul>
-                    <li class="answer">Bułgaria</li>
-                    <li class="answer">Serbia</li>
-                    <li class="answer">Czarnogóra</li>
-                </ul>
+            <div class="subsection">
+                <div class="subsection-title">Sojusze mocarstw</div>
+                
+                <div class="question-box">
+                    <div class="question">Trójprzymierze</div>
+                    <div class="question" style="font-weight: normal; margin-top: 10px;">Które państwa zawiązały sojusz?</div>
+                    <ul>
+                        <li>Niemcy</li>
+                        <li>Austro-Węgry</li>
+                        <li>Włochy</li>
+                    </ul>
+                    <div class="question" style="margin-top: 10px;">W którym roku powstał sojusz?</div>
+                    <div class="answer">1882 r.</div>
+                    <div class="question" style="margin-top: 10px;">Jak inaczej jest nazywany ten blok państw?</div>
+                    <div class="answer">państwa centralne</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Trójporozumienie</div>
+                    <div class="question" style="font-weight: normal; margin-top: 10px;">Które państwa zawiązały sojusz?</div>
+                    <ul>
+                        <li>Francja</li>
+                        <li>Rosja</li>
+                        <li>Wielka Brytania</li>
+                    </ul>
+                    <div class="question" style="margin-top: 10px;">W którym roku powstał ten blok państw?</div>
+                    <div class="answer">1907 r.</div>
+                    <div class="question" style="margin-top: 10px;">Jak inaczej jest nazywany ten sojusz państw?</div>
+                    <div class="answer">ententa</div>
+                </div>
             </div>
             
-            <div class="box">
-                <p><strong>Które państwo w regionie było niepodległe już od 1830 r.?</strong></p>
-                <p class="answer">Grecja</p>
-            </div>
-            
-            <div class="box">
-                <p><strong>Przeciw komu koalicja toczyła walki w czasie:</strong></p>
-                <p>I wojny bałkańskiej (1912–1913),</p>
-                <p class="answer">Turcji</p>
-                <p>II wojny bałkańskiej (1913–1914)?</p>
-                <p class="answer">Bułgarii</p>
+            <div class="subsection">
+                <div class="subsection-title">„Kocioł bałkański"</div>
+                
+                <div class="question-box">
+                    <div class="question">Które państwa toczyły wojnę w latach 1877–1878?</div>
+                    <ul>
+                        <li>Rosja</li>
+                        <li>Turcja</li>
+                    </ul>
+                    <div class="question" style="margin-top: 10px;">Które państwo zwyciężyło?</div>
+                    <div class="answer">Rosja</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Jakie nowe państwa powstały na Półwyspie Bałkańskim na przełomie XIX i XX w.?</div>
+                    <ul>
+                        <li>Bułgaria</li>
+                        <li>Serbia</li>
+                        <li>Czarnogóra</li>
+                    </ul>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Które państwo w regionie było niepodległe już od 1830 r.?</div>
+                    <div class="answer">Grecja</div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">Przeciw komu koalicja toczyła walki w czasie:</div>
+                    <div class="question" style="font-weight: normal; margin-top: 5px;">I wojny bałkańskiej (1912–1913),</div>
+                    <div class="answer">Turcji</div>
+                    <div class="question" style="font-weight: normal; margin-top: 5px;">II wojny bałkańskiej (1913–1914)?</div>
+                    <div class="answer">Bułgarii</div>
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="main-title">Wojna rosyjsko-japońska</div>
-    
-    <div class="container">
-        <div class="column">
-            <div class="box">
-                <p><strong>Jaki obszar stał się przyczyną sporu między Rosją a Japonią?</strong></p>
-                <p class="answer">Korea, Mandżuria</p>
-            </div>
-        </div>
+    <div class="main-section">
+        <div class="section-title">Wojna rosyjsko-japońska</div>
         
-        <div class="column">
-            <div class="box">
-                <p><strong>Gdzie doszło do bitwy morskiej w 1905 r.?</strong></p>
-                <p class="answer">Cuszima</p>
+        <div class="subsection-container">
+            <div class="question-box" style="flex: 1;">
+                <div class="question">Jaki obszar stał się przyczyną sporu między Rosją a Japonią?</div>
+                <div class="answer">Korea, Mandżuria</div>
             </div>
-        </div>
-        
-        <div class="column">
-            <div class="box">
-                <p><strong>Która strona zwyciężyła w wojnie?</strong></p>
-                <p class="answer">Japonia</p>
+            
+            <div class="question-box" style="flex: 1;">
+                <div class="question">Gdzie doszło do bitwy morskiej w 1905 r.?</div>
+                <div class="answer">Cuszima</div>
+            </div>
+            
+            <div class="question-box" style="flex: 1;">
+                <div class="question">Która strona zwyciężyła w wojnie?</div>
+                <div class="answer">Japonia</div>
             </div>
         </div>
     </div>
+</div>
+
 </body>
 </html>
